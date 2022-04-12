@@ -50,6 +50,8 @@ class Pipe:
 bee=Bee()
 pipe1= Pipe(200)
 #Create second pipe object at 300
+pipe2= Pipe(300)
+
 
 while True:    
     screen.fill((50,150,255))
@@ -70,6 +72,8 @@ while True:
     bee.display()  
     pipe1.display()
     #Display second pipe
+    pipe2.display()
+
     screen.blit(images["base"],[groundx,550])
    
     pygame.display.update()
